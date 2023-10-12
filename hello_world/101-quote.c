@@ -1,8 +1,17 @@
 #include <stdio.h>
-
+#include <string.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	const char* vorg = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	for (int i=0;vorg[i] != '\O';i++);
-		return (1);
+	char a[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	int i=strlen(a);
+	int j;
+|
+	for(j = 0; j < i; j++)
+		putchar(a[j]);
+	return (1);
 }
