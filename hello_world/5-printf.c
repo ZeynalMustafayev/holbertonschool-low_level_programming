@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	fprintf(stdout, "\n");
 	printf("with proper grammar, but the outcome is a piece of art,");
+	fprintf(stdout, "\n");
 		return 0;
 }
