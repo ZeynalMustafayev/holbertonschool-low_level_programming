@@ -8,10 +8,12 @@
 int main(void)
 {
 	char a[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	int i=strlen(a);
+	int i = strlen(a);
 	int j;
-|
-	for(j = 0; j < i; j++)
+
+	for (j = 0; j < i; j++)
+	{
 		putchar(a[j]);
+	}
 	return (1);
 }
