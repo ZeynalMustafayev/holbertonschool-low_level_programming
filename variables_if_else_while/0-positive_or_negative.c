@@ -1,9 +1,14 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
+/*
+*This program generates a random number and compares it to 0
+*/
 
-/* betty style doc for function main goes there */
+/**
+ * main - the main function of the program
+ *Return: Always 0 (Success)
+*/
 int main(void)
 {
 	int n;
