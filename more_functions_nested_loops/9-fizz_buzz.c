@@ -22,7 +22,7 @@ int main(void)
 		}
 		else if (a % 3 == 0)
 		{
-			printf("Fizz")
+			printf("Fizz");
 		}
 		else
 		{
