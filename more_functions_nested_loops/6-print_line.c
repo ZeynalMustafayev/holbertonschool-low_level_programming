@@ -1,6 +1,9 @@
 #include "main.h"
 /**
  * print_line - prints every lines
+ *
+ * @n: variable
+ *
  */
 void print_line(int n)
 {
@@ -10,9 +13,9 @@ void print_line(int n)
 	{
 		_putchar ('_');
 	}
-	if (a <= 0)
-	{
-		_putchar (' ');
-	}
+		if (a <= 0)
+		{
+			_putchar (' ');
+		}
 	_putchar ('\n');
 }
