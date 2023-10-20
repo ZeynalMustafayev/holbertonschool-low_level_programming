@@ -28,7 +28,8 @@ int main(void)
 		{
 			printf("%d", a);
 		}
-		putchar (' ');
+		if (a != 100)
+			printf(' ');
 	}
 	putchar ('\n');
 	return (0);
