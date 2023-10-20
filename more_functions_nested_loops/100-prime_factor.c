@@ -7,7 +7,7 @@
 int main(void)
 {
 	unsigned long i = 2;
-	unsigned long n = 612852475143
+	unsigned long n = 612852475143;
 
 	while (i != n)
 	{
