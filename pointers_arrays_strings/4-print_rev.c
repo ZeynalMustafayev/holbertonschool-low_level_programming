@@ -1,23 +1,32 @@
 #include "main.h"
-#include <stdio.h>
 #include <string.h>
-
+#include "_putchar.c"
 /**
- * print_rev - length of string
- * @s: variable
- * Return: integer
+ * print_rev - reverse the string
+ * @s: string
  */
+int main(void)
+{
+    char *str;
 
+    str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+    print_rev(str);
+    return (0);
+}
 void print_rev(char *s)
 {
-	int a, len, b;
+	int n;
 
-	len = strlen(s);
-
-	for (a = 0; a < len; a++)
+	n = strlen(s);
+	while (n != -1)
 	{
-		b = s[a];
-		s[a] = s[len - a - 1];
-		s[len - a - 1] = b;
+		if (*(s + n) == '\0')
+		{
+			n--;
+			continue;
+		}
+		_putchar(*(s + n));
+		n--;
 	}
+	_putchar('\n');
 }
