@@ -20,4 +20,6 @@ void puts_half(char *str)
 		i++;
 	}
 	_putchar ('\n');
+	*(str + i) == '\0';
+	putchar(*(str + i));
 }
