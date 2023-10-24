@@ -11,11 +11,9 @@ void print_array(int *a, int n)
 
 	for (arr = 0; arr < n; arr++)
 	{
-		if (arr == n - 1)
-		{
-			printf("%d", *(a + arr));
-			continue;
-		}
-		printf("%d, ", *(a + arr));
+		printf("%d", a[arr]);
+		if (arr != n-1)
+			printf(", ");
 	}
+	printf("\n");
 }
