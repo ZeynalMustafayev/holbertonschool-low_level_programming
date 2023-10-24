@@ -4,15 +4,8 @@
 /**
  * print_rev - reverse the string
  * @s: string
+ *
  */
-int main(void)
-{
-    char *str;
-
-    str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-    print_rev(str);
-    return (0);
-}
 void print_rev(char *s)
 {
 	int n;
