@@ -37,7 +37,7 @@ char *cap_string(char *a)
 		{
 			*(a + i) = b - 32;
 		}
-		else if (i == ';' && b >= 97 && b <= 122)
+		else if (c == ';' && b >= 97 && b <= 122)
 		{
 			*(a + i) = b - 32;
 		}
