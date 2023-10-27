@@ -17,7 +17,6 @@ char *cap_string(char *a)
 	{
 		b = *(a + i);
 		c = *(a + i - 1);
-
 		if (i == 0 && b >= 97 && b <= 122)
 		{
 			*(a + i) = b - 32;
