@@ -15,8 +15,8 @@ char *cap_string(char *a)
 	i = 0;
 	while (i < j)
 	{
-		b = *(i + a);
-		c = *(i + a - 1);
+		b = *(a + i);
+		c = *(a + i - 1);
 
 		if (i == 0 && *(a + i) >= 97 && *(a + i) <= 122)
 		{
