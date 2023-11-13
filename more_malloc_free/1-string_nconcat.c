@@ -26,7 +26,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	if (n >= a2)
+	if (sign >= a2)
 	{
 		sign = a2;
 		a = malloc(sizeof(char) * a3);
