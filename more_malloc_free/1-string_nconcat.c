@@ -20,10 +20,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	a3 = a1 + a2 + 1;
 
 	if (s1 == NULL)
-		return (NULL);
+		s1 = ' ';
 
 	if (s2 == NULL)
-		return (NULL);
+		s2 = ' ';
 
 	a = malloc(sizeof(char) * a3);
 
