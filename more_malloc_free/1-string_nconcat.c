@@ -21,10 +21,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	a = malloc(sizeof(char) * a3);
 
-	if (n > a2)
-
 	if (a == NULL)
 		return (NULL);
+
+	if (n > a2)
 
 	for (i = 0; i <= a1; i++)
 	a[i] = s1[i];
