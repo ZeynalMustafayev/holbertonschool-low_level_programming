@@ -20,12 +20,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		soz = va_arg(ap, char *);
 		printf("%s", soz);
-			if (soz == NULL)
-				printf("(nil)");
-			else
-			{
-				printf("%s", soz);
-			}
+		if (soz == NULL)
+			printf("(nil)");
+		else
+		{
+			printf("%s", soz);
+		}
 
 		if (separator != 0 && i < n - 1)
 		printf("%s", separator);
