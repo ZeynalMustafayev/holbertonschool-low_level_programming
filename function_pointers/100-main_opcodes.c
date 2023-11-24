@@ -16,7 +16,6 @@ int main(int argc, char *argv[])
 	if (argc != 2)
 	{
 		printf("Error\n");
-		printf("Usage: ./main number_of_bytes\n");
 		exit(1);
 	}
 	int numBytes = atoi(argv[1]);
@@ -27,8 +26,6 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 	unsigned char *mainAddress = (unsigned char *) main;
-
-	printf("Opcode of main function:\n");
 
 	for (i = 0; i < numBytes; i++)
 	{
