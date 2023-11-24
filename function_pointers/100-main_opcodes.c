@@ -11,7 +11,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
+	int i, numBytes;
 
 	if (argc != 2)
 	{
@@ -27,10 +27,11 @@ int main(int argc, char *argv[])
 	}
 	unsigned char *mainAddress = (unsigned char *) main;
 
-	for (i = 0; i < numBytes; i++)
+	for (i = 0; i < numBytes - 1; i++)
 	{
 		printf("%02x ", mainAddress[i]);
 	}
+	printf("%02x", mainAddress[i]);
 	printf("\n");
 	return (0);
 }
