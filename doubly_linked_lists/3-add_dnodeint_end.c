@@ -34,6 +34,6 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		end = end->next;
 	}
 	end->next = ar;
-	end = ar->prev;
+	ar->prev = end;
 	return (ar);
 }
