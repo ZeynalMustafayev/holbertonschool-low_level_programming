@@ -25,7 +25,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		(*h) = new_node;
 		return (new_node);
 		}
-		while (c < idx - 1)
+		while (c < idx - 1 && prev_node)
 		{
 			prev_node = prev_node->next;
 			c++;
