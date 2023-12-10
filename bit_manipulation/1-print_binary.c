@@ -8,10 +8,10 @@
 
 void binary_printer(unsigned long int n)
 {
-		if (!n)
-					return;
-			binary_printer(n >> 1);
-				_putchar((n & 1) + '0');
+	if (!n)
+		return;
+	binary_printer(n >> 1);
+	_putchar((n & 1) + '0');
 }
 
 /**
