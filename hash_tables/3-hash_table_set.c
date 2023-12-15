@@ -25,8 +25,7 @@ void free_node(hash_node_t *node)
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
-	hash_node_t *new_node;
-	hash_node_t *current;
+	hash_node_t *new_node, *current;
 
 	if (strcmp(key, "") == 0 || key == NULL || ht == NULL)
 		return (0);
