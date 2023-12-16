@@ -2,12 +2,6 @@
 #include <string.h>
 #include <stdio.h>
 #include "hash_tables.h"
-void free_node(node)
-{
-	free(node);
-	free(node->value);
-	free(node->key);
-}
 /**
  * hash_table_set - Set a value in the hash table.
  * @ht: Hash table.
@@ -43,7 +37,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			}
 			if (current->next)
 			{
-				free_node(ht);
 				current = current->next;
 			}
 		} while (current->next);
