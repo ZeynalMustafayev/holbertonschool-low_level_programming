@@ -3,18 +3,6 @@
 #include <stdio.h>
 #include "hash_tables.h"
 /**
- * free_node - Free a node.
- * @node: Node to free.
- *
- * Return: Void.
- */
-void free_node(hash_node_t *node)
-{
-	free(node->key);
-	free(node->value);
-	free(node);
-}
-/**
  * hash_table_set - Set a value in the hash table.
  * @ht: Hash table.
  * @key: Key to be indexed.
@@ -29,7 +17,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (value == NULL || key == NULL || ht == NULL)
 		return (0);
-	index = key_index((const unsigned char *)key, ht->size);
+	index = key_index((unsigned char *)key, ht->size);
 	new_node = malloc(sizeof(hash_node_t *));
 	if (new_node == NULL)
 		return (0);
@@ -49,7 +37,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			}
 			if (current->next)
 				current = current->next;
-		} while(current->next);
+		} while (current->next);
 		new_node->next = ht->array[index];
 		ht->array[index] = new_node;
 	}
