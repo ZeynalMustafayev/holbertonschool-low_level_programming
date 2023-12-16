@@ -41,7 +41,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	else
 	{
 		current = ht->array[index];
-		if (strcmp(current->key, key) == 0)
+		if (strcmp(current->key, key) != 0)
 		{
 			new_node->next = current->next;
 			ht->array[index] = new_node;
